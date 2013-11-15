@@ -1,0 +1,6 @@
+In this project I am trying to make simple API on SMS Gateway web based that provide function to read all contacts, get messages and send messages. In this project  there are two folder, first one named 'server' for the web that provide API. This folder contains api.init.php and under folder core there are config.php and function.php. config.php contain function for connect to database, function.php contain function that manipulate the database like send and read. api.init.php contain function that controll data from client. And the last one folder named 'client' for the web that will use API. This folder contains api.class.php and test.php. api.class.php contains class function that interact from web that use API to the web that provide API, and test.php is file only to test function and how to use the function.
+
+How to Use function
+- getAllContacts() return array, example : SMS::getAllContacts(); //calls static method
+- getMessages($number) one parameter, return array, example : SMS::getMessages('08xxxxxxxxxx'); //calls static method
+- sendMessages($number,$text) two parameters, example : SMS::sendMessages('08xxxxxxxxxx','Test send message :3'); //calls static method
